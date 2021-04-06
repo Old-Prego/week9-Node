@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --lBlue: #92b0e9;
+    --dTeal: #00d9ff;
+    --linkBlue: #0066ff;
+    --blueGreen: #55b7f5;
+    --bgLight: #b8e4ff;
+}
+
+/* Sets general font and background color */
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background: radial-gradient(white, var(--bgLight));
+}
+
+/* Sets up the navbar to fill up the top of the screen and spaces the links out evenly. */
+nav {
+    height:50px;
+    background-color:var(--lBlue);
+}
+
+nav a {
+    text-decoration:none;
+    font-size:24px;
+    width:23%;
+    height:26px;
+    margin:1px;
+    color:var(--linkBlue);
+    font-weight: bold;
+}
+
+#container {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+/* Properly formats the main header and gives it a bit of extra space */
+#name {
+    margin-top:2%;
+    margin-bottom:2%;
+    font-size:48px;
+}
+
+#work {
+    padding-top:20px;
+    width:50%;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+/* Applies settings to all background images of the work section, making sure they sit correctly in the background and are blurred out until hovered on. */
+#work article .backgroundImage{
+    border-style:solid;
+    height:30em;
+    margin:0% 5% 2.5% 5%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    filter:blur(2px);
+    border-style:solid;
+    border-color:var(--bgLight);
+    border-width:10px;
+    border-radius:5%;
+}
+
+/* Applies general styling and makes sure that the paragraphs don't look like links. */
+#work article p{
+    color:black;
+    text-align:center;
+    margin: auto;
+    padding-top:1%;
+    width:80%;
+}
+
+/* Gives the work articles a very slight gradient to make them stand out. */
+#work article{
+    background:radial-gradient(var(--blueGreen),var(--bgLight));
+    border-radius:5%;
+    padding-bottom:2%;
+}
+
+#work a{
+    text-decoration:none;
+}
+
+#work h1{
+    background-color: var(--lBlue);
+}
+
+#work h1, h3{
+    text-align:center;
+}
+
+#work h3{
+    margin-top:4%;
+}
+
+#webDev .backgroundImage{
+    background-image:url("images/html-image.jpg");
+}
+
+#vba .backgroundImage{
+    background-image:url("images/vba.png");
+}
+
+#gab .backgroundImage{
+    background-image:url("images/gab.png");
+}
+
+/* The below pseudo-classes make the background images become clear when hovering. */
+#webDev .backgroundImage:hover{
+    filter:blur(0px);
+}
+
+#vba .backgroundImage:hover{
+    filter:blur(0px);
+}
+
+#gab .backgroundImage:hover{
+    filter:blur(0px);
+}
+
+/* This anchor tag surrounding the work articles turns the entire article into a link. */
+article a{
+    display:block;
+    text-decoration:none;
+}
+
+#aboutMe {
+    text-align:center;
+    width:50%;
+}
+
+#aboutMe h2{
+    margin:10px;
+    background-color: var(--lBlue);
+}
+
+/* Lines up the contact links horizontally and spaces them out a bit. */
+#contactMe{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content: center;
+    margin:20px;
+}
+
+#contactMe p{
+    width:9%;
+    margin:1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    text-align:center;
+    font-size:20px;
+    color:var(--linkBlue);
+    background-color:var(--lBlue);
+}
+
+#contactMe a{
+    text-decoration:none;
+    color:var(--linkBlue);
+}
+
+#contactHeader{
+    background-color:var(--lBlue);
+    width:40%;
+    text-align:center;
+    margin-top:2%;
+}
+
+#portrait {
+    padding-bottom:20px;
+    width:50%;
+}
+
